@@ -1,14 +1,16 @@
 # aoc-kotlin-2021
 
-Welcome to the Advent of Code[^aoc] Kotlin project created by [svaught598][github] using the [Advent of Code Kotlin Template][template] delivered by JetBrains.
+Advent of Code Solutions using Kotlin
 
-In this repository, svaught598 is about to provide solutions for the puzzles using [Kotlin][kotlin] language.
+### About
 
-If you're stuck with Kotlin-specific questions or anything related to this template, check out the following resources:
+Advent of Code is a great opportunity to learn a new language. I'm attempting it for my first time using Kotlin. So far, Kotlin has been a pretty cool language to work with. It's like Python & Java had a baby and raised it with an irrational fear of mutability. So basically perfect.
 
-- [Kotlin docs][docs]
-- [Kotlin Slack][slack]
-- Template [issue tracker][issues]
+There's a lot of cool & exciting things in Kotlin that I haven't experienced before:
+- Infix functions, which make code more readable
+- Extension functions, to add new methods to stdlib classes
+- Type inference, to make code less verbose, but still safe
+- Data classes, for when data/methods arne't *not quite* ready to be a fully fledged class
 
 
 [^aoc]:
