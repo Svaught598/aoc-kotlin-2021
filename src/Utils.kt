@@ -54,3 +54,12 @@ fun <E> transpose(xs: List<List<E>>): List<List<E>> {
         }
     }
 }
+
+
+/**
+ * Extension for a stack (using mutable list)
+ */
+inline fun <T> MutableList<T>.push(item: T) =
+    add(item)
+inline fun <T> MutableList<T>.pop(): T? =
+    if (isNotEmpty()) removeAt(lastIndex) else null
