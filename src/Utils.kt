@@ -6,7 +6,8 @@ import kotlin.math.pow
 /**
  * Reads lines from the given input txt file.
  */
-fun readInput(name: String) = File("src", "input/$name.txt")
+fun readInput(name: String) =
+    File("src", "input/$name.txt")
 
 fun <T>File.map(f: (String) -> T): List<T> {
     val mappedLines = ArrayList<T>()
@@ -74,3 +75,13 @@ fun <T, R> List<T>.product(l: List<R>): List<Pair<T, R>> {
         }
     }
 }
+
+
+/**
+ * Some string extensions for checking casing
+ */
+fun String.isLower(): Boolean =
+    this.lowercase() == this
+
+fun String.isUpper(): Boolean =
+    this.uppercase() == this
