@@ -59,7 +59,18 @@ fun <E> transpose(xs: List<List<E>>): List<List<E>> {
 /**
  * Extension for a stack (using mutable list)
  */
-inline fun <T> MutableList<T>.push(item: T) =
+fun <T> MutableList<T>.push(item: T) =
     add(item)
-inline fun <T> MutableList<T>.pop(): T? =
+fun <T> MutableList<T>.pop(): T? =
     if (isNotEmpty()) removeAt(lastIndex) else null
+
+/**
+ * Cartesian Product of Two Lists
+ */
+fun <T, R> List<T>.product(l: List<R>): List<Pair<T, R>> {
+    return flatMap { item1 ->
+        l.map { item2 ->
+            Pair(item1, item2)
+        }
+    }
+}
